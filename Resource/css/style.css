@@ -1,0 +1,17 @@
+.navbar-brand{
+    max-width: 50%;
+}
+
+.imglogo{
+    max-width: 100%;
+}
+
+.border-bootom{
+    border-bottom: 3px solid #d6d5d5 !important;
+}
+
+@media (min-width: 768px){
+    .navbar-brand{
+        max-width: 15%;
+    }
+}
