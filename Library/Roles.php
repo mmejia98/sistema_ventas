@@ -42,6 +42,17 @@ class Roles extends Connection{
             }
         };
     }
+
+    public function GetRoles(){
+        $roles = $this->db->select1("*", 'TRoles', null, null);
+        if(is_array($roles)){
+            if(0 < count($roles['results'])){
+                return $roles['results'];
+            }else{
+                return $roles;
+            }
+        }
+    }
 }
 
 ?>

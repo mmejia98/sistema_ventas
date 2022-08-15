@@ -1,7 +1,9 @@
 <?php
 
-class Controllers{
+class Controllers extends AnonymousClasses{
     public function __construct(){
+        date_default_timezone_set('America/El_Salvador');
+        Session::start();
         $this->loadClassmodels();
         $this->role = new Roles();
         $this->view = new Views();

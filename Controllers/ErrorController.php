@@ -5,7 +5,7 @@ class ErrorController extends Controllers{
         parent::__construct();
     }
     public function Error($url){
-        $this->view->Render($this, "error", $url);
+        $this->view->Render($this, "error", $url, null, null);
     }
 }
 
